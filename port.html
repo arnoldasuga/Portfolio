@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold Asuga | Editorial Leader & PR Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --accent: #9b1b1b; /* Sophisticated Crimson */
+            --dark: #121212;
+            --grey: #f8f9fa;
+            --text: #2d3436;
+            --border: #e1e1e1;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text); background-color: #fff; line-height: 1.7; }
+        
+        /* Layout Helpers */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+        section { padding: 100px 0; border-bottom: 1px solid var(--border); }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 60px; align-items: center; }
+
+        /* Navigation */
+        nav { padding: 25px 0; border-bottom: 1px solid var(--border); sticky; top: 0; background: #fff; z-index: 100; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 900; letter-spacing: -1px; }
+        .nav-links a { text-decoration: none; color: var(--text); margin-left: 30px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Header */
+        .hero { background: var(--grey); padding: 80px 0; }
+        .hero-img { width: 100%; border-radius: 4px; filter: grayscale(10%) contrast(110%); box-shadow: 30px 30px 0px var(--accent); }
+        .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 4.5rem; line-height: 1; margin-bottom: 20px; }
+        .badge { display: inline-block; padding: 5px 15px; background: var(--accent); color: #fff; font-size: 0.8rem; font-weight: 700; margin-bottom: 20px; text-transform: uppercase; }
+
+        /* Portfolio/Work Section */
+        .work-card { background: #fff; border: 1px solid var(--border); padding: 40px; transition: 0.4s; }
+        .work-card:hover { transform: translateY(-10px); border-color: var(--accent); }
+        .work-card h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 15px; }
+        .ext-link { color: var(--accent); text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; margin-top: 15px; }
+
+        /* Skills/Expertise */
+        .skills-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .skill-item { padding: 20px; border-left: 3px solid var(--accent); background: var(--grey); }
+        .skill-item h4 { margin-bottom: 10px; font-weight: 700; }
+
+        /* Education & Certs */
+        .edu-list { list-style: none; }
+        .edu-item { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px dashed var(--border); }
+
+        /* Contact & Footer */
+        .contact-box { background: var(--dark); color: #fff; padding: 80px 5%; text-align: center; }
+        .footer-bottom { padding: 40px 0; text-align: center; font-size: 0.8rem; color: #888; }
+        
+        @media (max-width: 968px) {
+            .grid { grid-template-columns: 1fr; }
+            .hero-content h1 { font-size: 3rem; }
+            .skills-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-inner">
+            <div class="logo">A. ASUGA</div>
+            <div class="nav-links">
+                <a href="#work">Featured Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container grid">
+            <div class="hero-content">
+                <span class="badge">Chief Editor & PR Strategist</span>
+                <h1>Arnold Omweri Asuga</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 30px;">Bachelor of Science in Communication and Public Relations student at Moi University. A specialist in driving institutional reputation and youth-led digital transformation.</p>
+                <div class="stats" style="display: flex; gap: 40px;">
+                    <div><strong>40%</strong><br><small>Engagement Growth</small></div>
+                    <div><strong>95%</strong><br><small>Accuracy Rating</small></div>
+                    <div><strong>15+</strong><br><small>Team Leadership</small></div>
+                </div>
+            </div>
+            <div>
+                <img src="pic.jpg" class="hero-img" alt="Arnold Asuga">
+            </div>
+        </div>
+    </header>
+
+    <section id="work">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 50px;">Featured Editorial Portfolio</h2>
+            <div class="grid">
+                <div class="work-card">
+                    <span style="color: var(--accent); font-weight: bold;">01 / LEADERSHIP</span>
+                    <h3>Nextrend Magazine</h3>
+                    <p>Directing the strategic vision for Moi University's premier digital publication. Overseeing content lifecycle for 2,000+ readers across technology, governance, and social justice niches.</p>
+                    <a href="www.nextrendmag.co.ke" target="_blank" class="ext-link">Visit Publication <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="work-card">
+                    <span style="color: var(--accent); font-weight: bold;">02 / PRODUCTION</span>
+                    <h3>Moi University Media Fest</h3>
+                    <p>Directed and produced a 10-minute promotional documentary. Successfully showcased at the 2024 Media Festival, highlighting key academic programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 50px;">Professional Trajectory</h2>
+            <div class="edu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div>
+                        <h4>Public Relations Volunteer</h4>
+                        <p><strong>Moi University PR Office</strong></p>
+                    </div>
+                    <span>2024 — Present</span>
+                </div>
+                <p>Leading crisis communication management and institutional stability efforts. Drafted strategic statements that reduced misinformation spread by 70% during critical incidents.</p>
+            </div>
+            
+            <div class="edu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div>
+                        <h4>Event Facilitator & Organizer</h4>
+                        <p><strong>Tribeless Youth Organization & Internews</strong></p>
+                    </div>
+                    <span>June 2024</span>
+                </div>
+                <p>Co-led a high-impact Hackathon for 50+ participants. Focused on "Making Digital Tools for Digital Journalists in the Modern Age."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 50px;">Expertise & Certifications</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <h4>Strategic Communication</h4>
+                    <small>Crisis Mitigation, Press Releases, Stakeholder Engagement, Media Law & Ethics.</small>
+                </div>
+                <div class="skill-item">
+                    <h4>Digital Production</h4>
+                    <small>Canva, Adobe Photoshop (Basics), HTML/CSS, Magazine Layout Design, Video Editing.</small>
+                </div>
+                <div class="skill-item">
+                    <h4>Leadership</h4>
+                    <small>Conflict Resolution, Project Management, Cross-Cultural Competency, Public Speaking.</small>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <h4>Credentials</h4>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+                    <span class="badge" style="background: #eee; color: #444;">Public Speaking (Moi Uni)</span>
+                    <span class="badge" style="background: #eee; color: #444;">Digital Safety (Tribeless Youth)</span>
+                    <span class="badge" style="background: #eee; color: #444;">Computer Studies (Distinction)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-box" id="contact">
+        <h2 style="font-family: 'Playfair Display'; font-size: 3rem; margin-bottom: 20px;">Let's Build the Narrative.</h2>
+        <p style="margin-bottom: 40px; opacity: 0.8;">Currently open to consultancy and communication roles.</p>
+        <div style="font-size: 1.5rem; margin-bottom: 30px;">
+            <a href="mailto:arnoldasuga20@gmail.com" style="color: #fff; margin: 0 20px;"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+254701754778" style="color: #fff; margin: 0 20px;"><i class="fas fa-phone"></i></a>
+            <a href="https://www.linkedin.com/in/arnold-asuga-2681b9290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: #fff; margin: 0 20px;"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="mailto:arnoldasuga20@gmail.com" class="btn" style="background: #fff; color: var(--dark); padding: 15px 40px; text-decoration: none; font-weight: 700; border-radius: 50px;">HIRE ME</a>
+    </section>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Arnold Omweri Asuga. Designed for Editorial Excellence.</p>
+    </div>
+
+</body>
+</html>
